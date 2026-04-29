@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0a2540;
+    color: white;
+    transition: 0.3s;
+}
+
+.light-mode {
+    background: #f4f4f4;
+    color: black;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background: #031d33;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background: #052c4f;
+}
+
+nav a {
+    padding: 14px 20px;
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    background: #0b3d6d;
+}
+
+.container {
+    padding: 30px;
+}
+
+.card {
+    background: #0b3d6d;
+    padding: 15px;
+    margin: 15px;
+    border-radius: 10px;
+    display: inline-block;
+    width: 250px;
+}
+
+img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Fish animation */
+.fish {
+    position: fixed;
+    top: 50%;
+    left: -100px;
+    font-size: 30px;
+    animation: swim 10s linear infinite;
+}
+
+@keyframes swim {
+    0% { left: -100px; }
+    100% { left: 100%; }
+}
+
+button {
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+}
